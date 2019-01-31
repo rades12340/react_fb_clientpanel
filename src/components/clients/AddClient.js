@@ -60,6 +60,7 @@ class AddClient extends Component {
                   onChange={this.onChange}
                 />
               </div>
+
               <div className="form-group">
                 <label htmlFor="lastName">Last Name</label>
                 <input
