@@ -5,7 +5,6 @@ import { compose } from "redux";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import Spinner from "../layout/Spinner";
-import { relative } from "path";
 
 class EditClient extends Component {
   constructor(props) {
@@ -23,8 +22,6 @@ class EditClient extends Component {
     e.preventDefault();
 
     const { client, firestore, history } = this.props;
-
-    console.log(this.props.history);
 
     const updClient = {
       firstName: this.firstNameInput.current.value,
